@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Jua&family=Song+Myung&display=swap" rel="stylesheet">
+
+    <title>카카오 프로필</title>
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+        .whole-body{
+            width: 480px;
+            height: 800px;
+
+            background-color: aquamarine;
+
+            border: 1px solid rgb(206,206,206);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .profile-top{
+            height: 460px;
+            position: static;
+            text-align: center;
+            background-color: rgb(255, 155, 157);
+        }
+        .gray-box{
+            background-color: rgb(208, 180, 180);
+            border-radius: 10px;
+            border: none;
+            width:30px;
+            heigth:80px;
+        }
+        .profile-top > div {
+            margin-top: 150px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .profile-center{
+            left: 165px;
+            margin-top: 210px;
+            position: absolute;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .profile-center > img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+        }
+        .profile-bottom{
+            height: 340px;
+            background-color: white;
+        }
+        .profile-bottom > div{
+            margin-top: 200px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .chat-myself {
+            font-size: 13px;
+            letter-spacing: -1px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chat-image{
+            background: url("chat_myself.png") no-repeat;
+            background-size: 50px 50px;
+            border: none;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            margin-bottom: 13px;
+        }
+        .manage-myprofile{
+            font-size: 13px;
+            letter-spacing: -1px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto 50px; auto 50px;
+        }
+        .mmp-image{
+            background: url("manage_profile.png") no-repeat;
+            background-size: 50px 50px;
+            border: none;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            margin-bottom: 13px;
+        }
+        .kakaostory{
+            font-size: 13px;
+            letter-spacing: -1px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .ks-image{
+            background: url("kakaostory.png") no-repeat;
+            background-size: 50px 50px;
+            border: none;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            margin-bottom: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="whole-body">
+        <div class="profile-top">
+            <div>
+                <button class="gray-box"></button>
+                <p>안녕하세요. GD를 삼킨 악뮤 찬혁입니다.</br>"날~ 바라봐 바라봐 바라봐~"</p>
+            </div>
+        </div>
+        <div class="profile-center">
+            <img src="myprofile_photo.jpeg">
+            <p>찬혁</p>
+        </div>
+        <div class="profile-bottom">
+            <div>
+                <div class="chat-myself">
+                    <input type="button" class="chat-image">
+                    <p>나와의 채팅</p>
+                </div>
+                <div class="manage-myprofile">
+                    <input type="button" class="mmp-image">
+                    <p>프로필 관리</p>
+                </div>
+                <div class="kakaostory">
+                    <input type="button" class="ks-image">
+                    <p>카카오스토리</p>
+                </div>
+            <div>
+        </div>
+    </div>
+</body>
+</html>
